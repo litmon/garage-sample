@@ -4,6 +4,8 @@ gem "garage", github: "cookpad/garage"
 gem "garage-doorkeeper"
 gem "responders", "~> 2.0"
 
+gem "devise"
+
 group :test do
   gem "rspec-rails" 
 end
