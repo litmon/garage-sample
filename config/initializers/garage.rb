@@ -21,4 +21,5 @@ Doorkeeper.configure do
   end
 end
 
+Doorkeeper.configuration.token_grant_types << "password"
 Garage.configuration.strategy = Garage::Strategy::Doorkeeper

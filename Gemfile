@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "garage", github: "cookpad/garage"
 gem "garage-doorkeeper"
+gem "responders", "~> 2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
