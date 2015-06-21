@@ -16,8 +16,8 @@ Doorkeeper.configure do
   optional_scopes(*Garage::TokenScope.optional_scopes)
 
   # アプリケーションのオーナーの認証
-  resource_owner_from_credentials do |routes|
-    User.find_by(email: params[:username])
+  resource_owner_authenticator do
+    current_user || redirect_to(new_user_session_path)
   end
 end
 
