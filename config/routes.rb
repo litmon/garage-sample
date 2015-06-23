@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
   scope :api do
     use_doorkeeper
+  end
 
-    scope :v1 do
-      resources :users, only: %i(index show create)
-    end
+  namespace :api do
+    resources :users, only: %i(show update)
   end
 end
